@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.flashies.demo.domain.user.dao.UserDao">
+
+    <resultMap id="UserResultMap" type="com.flashies.demo.domain.user.model.User"/>
+
+    <select id="insertUser">
+
+    </select>
+
+    <select id="getUsers" resultMap="UserResultMap">
+      SELECT * FROM users
+    </select>
+
+</mapper>
