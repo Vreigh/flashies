@@ -23,8 +23,7 @@ public class CardController {
 
    @ResponseBody
    @GetMapping(path = "/example")
-   public String example() {
-      List<User> users = userService.getUsers();
-      return "Hello World!";
+   public List<User> example() {
+      return userService.getUsers();
    }
 }
